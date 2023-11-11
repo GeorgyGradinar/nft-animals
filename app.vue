@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="body">
     <HeaderElement></HeaderElement>
     <main>
       <NuxtPage></NuxtPage>
@@ -9,3 +9,8 @@
 <script setup lang="ts">
 import HeaderElement from "~/components/HeaderElement.vue";
 </script>
+<style scoped>
+.body {
+  background: var(--background);
+}
+</style>
