@@ -115,14 +115,16 @@
 @media screen and (max-width: 500px) {
 
   .our-mission {
-    padding: 150px 10px;
+    padding: 150px 10px 30px;
 
     h1 {
-      font-size: 60px;
+      font-size: 50px;
+      align-self: flex-start;
     }
 
     p {
       width: 100%;
+      font-size: 20px;
     }
 
     .wrap-img {

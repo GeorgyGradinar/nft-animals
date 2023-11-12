@@ -69,9 +69,9 @@ import {nftList} from "../const/const.js";
     z-index: 10;
 
     @media screen and (max-width: 768px) {
-      font-size: 14px;
+      font-size: 20px;
       border: none;
-      padding: 0;
+      padding-bottom: 20px;
     }
   }
 
@@ -84,7 +84,7 @@ import {nftList} from "../const/const.js";
     text-align: center;
 
     @media screen and (max-width: 768px) {
-      font-size: 14px;
+      font-size: 20px;
       border: none;
       padding: 0;
     }
@@ -152,8 +152,8 @@ import {nftList} from "../const/const.js";
       border: none;
 
       p {
-        padding: 20px 10px;
-        font-size: 14px;
+        padding: 20px 10px 0;
+        font-size: 20px;
       }
 
       &__img {

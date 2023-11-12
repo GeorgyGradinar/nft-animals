@@ -38,6 +38,7 @@ footer {
     width: 400px;
     height: 400px;
     opacity: 0.7;
+    z-index: 0;
 
     img {
       position: absolute;;
@@ -53,6 +54,7 @@ footer {
     align-items: center;
     margin-left: 10%;
     flex: 1;
+    z-index: 2;
   }
 
   .wrapper-logo {

@@ -260,11 +260,12 @@ section {
 
     .call-buy {
       width: 100%;
+      margin: 120px 0;
 
       p {
         font-size: 25px;
+        padding: 10px 10px 40px;
         margin: unset;
-        padding: 10px;
       }
 
       .monstera-3 {
