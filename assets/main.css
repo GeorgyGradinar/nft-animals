@@ -12,3 +12,20 @@ body {
     font-family: 'Montserrat', cursive;
     overflow-x: hidden;
 }
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--gray);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-green);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-green);
+    opacity: 0.9;
+}
