@@ -1,8 +1,8 @@
 <template>
-  <div class="logo">
+  <NuxtLink to="/" class="logo">
     <img src="~/assets/images/logo.svg" alt="">
-    <span>urryFound</span>
-  </div>
+    <span>urryFund</span>
+  </NuxtLink>
 </template>
 
 <script setup lang="ts">
@@ -15,6 +15,7 @@
   display: flex;
   align-items: flex-end;
   cursor: pointer;
+  text-decoration: none;
 
   img {
     width: 35px;

@@ -23,8 +23,18 @@ header {
   background: var(--background);
   box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25);
   z-index: 100;
-  p{
-    color: red;
+}
+
+@media screen and (max-width: 650px) {
+  header {
+    padding: 32px 15px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header {
+    flex-direction: column;
+    gap: 25px;
   }
 }
 </style>

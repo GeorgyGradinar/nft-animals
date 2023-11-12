@@ -8,8 +8,22 @@
       <div class="wrapper-image">
         <img :src="useAsset(fact.urlImg)" alt="">
       </div>
-
     </div>
+
+    <div class="call-buy">
+      <p>You can buy an NFT and help save the lives of thousands of other animals.</p>
+      <NuxtLink to="/nft">Buy Now</NuxtLink>
+
+      <div class="monstera-3">
+        <img src="~/assets/images/monstera-3.png" alt="">
+      </div>
+    </div>
+
+    <div class="monstera-2">
+      <img src="~/assets/images/monstera-2.png" alt="">
+    </div>
+
+
   </section>
 </template>
 
@@ -69,6 +83,7 @@ function useAsset(path: String) {
 <style scoped lang="scss">
 section {
   .fact {
+    position: relative;
     display: flex;
     color: var(--background);
     background: var(--primary-green);
@@ -78,16 +93,25 @@ section {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 100px;
+      padding: 10px 100px;
 
       .title {
+        font-size: 35px;
+        font-weight: 800;
+        margin-bottom: 45px;
+        z-index: 1;
+      }
+
+      .text {
         font-size: 20px;
+        font-weight: 700;
+        z-index: 1;
       }
     }
 
     .wrapper-image {
       width: 50%;
-      max-height: 500px;
+      height: 30vw;
       overflow: hidden;
 
       img {
@@ -97,11 +121,159 @@ section {
       }
     }
 
-
     &:nth-child(even) {
       color: var(--primary-green);
       background: var(--background);
       flex-direction: row-reverse;
+
+      .wrapper-text {
+        .title,
+        .text {
+          text-align: end;
+        }
+      }
+    }
+  }
+
+  .call-buy {
+    position: relative;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 300px 0;
+
+    p {
+      max-width: 1200px;
+      font-size: 50px;
+      font-weight: 700;
+      color: var(--gray);
+      text-align: center;
+      margin: 0 50px 70px 50px;
+      z-index: 1;
+    }
+
+    a {
+      text-decoration: none;
+      padding: 10px 30px;
+      background: var(--primary-green);
+      border: none;
+      color: var(--background);
+      font-size: 20px;
+      font-weight: 700;
+      cursor: pointer;
+      opacity: 1;
+      transition: all 0.2s;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    .monstera-3 {
+      position: absolute;
+      bottom: 0;
+      right: -15vw;
+      width: 35vw;
+      height: 50vh;
+      z-index: 0;
+
+      img {
+        width: 100%;
+        transform: rotate(-110deg);
+      }
+    }
+  }
+
+  .monstera-2 {
+    position: absolute;
+    top: 200%;
+    right: -15vw;
+    width: 35vw;
+    height: 50vh;
+    z-index: 0;
+
+    img {
+      width: 100%;
+      transform: rotate(-90deg);
+    }
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  section {
+    .fact {
+      .wrapper-text {
+        padding: 10px 70px;
+
+        .title {
+          font-size: 30px;
+        }
+
+        .text {
+          font-size: 15px;
+        }
+      }
+
+      .wrapper-image {
+        height: 40vw;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  section {
+    .fact {
+      .wrapper-text {
+        padding: 10px 30px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  section {
+    .fact {
+      flex-direction: column;
+
+      .wrapper-text {
+        width: 80%;
+        padding: 70px 50px;
+      }
+
+      .wrapper-image {
+        width: 100%;
+        height: 90vw;
+      }
+
+      &:nth-child(even) {
+        flex-direction: column;
+
+        .wrapper-text {
+          width: 100%;
+          text-align: end;
+        }
+      }
+    }
+
+    .call-buy {
+      width: 100%;
+
+      p {
+        font-size: 25px;
+        margin: unset;
+        padding: 10px;
+      }
+
+      .monstera-3 {
+        display: none;
+      }
+    }
+
+    .monstera-2 {
+      display: none;
     }
   }
 }

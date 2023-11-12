@@ -1,6 +1,7 @@
 <template>
   <div class="wrapper-button">
-    <NuxtLink  v-for="button in buttons" :to="button.path" :class="{'active': button.path === router.currentRoute.value.path}">{{
+    <NuxtLink v-for="button in buttons" :to="button.path"
+              :class="{'active': button.path === router.currentRoute.value.path && !isFooter}">{{
         button.name
       }}
     </NuxtLink>
@@ -9,12 +10,16 @@
 </template>
 
 <script setup lang="ts">
-
 import {useRouter} from "nuxt/app";
-import {onMounted} from "vue";
+import {onMounted, ref} from "vue";
+
+
+const props = defineProps({
+  isFooter: Boolean
+})
 
 const router = useRouter();
-const buttons: {name: string, path: string}[] = [
+const buttons: { name: string, path: string }[] = [
   {
     name: 'Home',
     path: '/'
@@ -29,8 +34,10 @@ const buttons: {name: string, path: string}[] = [
   }
 ];
 
-onMounted(() => {
+let isFooter = ref(false);
 
+onMounted(() => {
+  isFooter.value = !!props.isFooter;
 })
 </script>
 
@@ -77,5 +84,14 @@ onMounted(() => {
   }
 }
 
-
+@media screen and (max-width: 500px) {
+  .wrapper-button {
+    .active {
+      &:after {
+        content: '';
+        bottom: -2px;
+      }
+    }
+  }
+}
 </style>

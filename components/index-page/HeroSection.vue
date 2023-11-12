@@ -1,5 +1,7 @@
 <template>
   <section>
+    <img class="jungle-image" src="~/assets/images/monstera-1.webp" alt="jungle leave">
+
     <div class="wrapper-main-text">
       <h1>Buy NFT - Help animals</h1>
       <p>All proceeds from the sale of NFTs will go to help animals.</p>
@@ -10,8 +12,10 @@
       save animals!
     </p>
 
-    <div class="monstera-leave">
-      <img class="monstera-3" src="~/assets/images/monstera-3.png" alt="">
+    <img class="monstera-image" src="~/assets/images/monstera-2.png" alt="monstera leaves">
+
+    <div class="monstera-leaves">
+      <img class="monstera-2" src="~/assets/images/monstera-3.png" alt="monstera leaves">
     </div>
   </section>
 </template>
@@ -22,8 +26,19 @@
 
 <style scoped lang="scss">
 section {
+  width: 100%;
   position: relative;
   padding: 0 0 100px 100px;
+
+  .jungle-image {
+    position: absolute;
+    left: -200px;
+    top: -300px;
+    transform: rotate(180deg);
+    width: 800px;
+    z-index: 105;
+    opacity: 0.7;
+  }
 
   .wrapper-main-text {
     display: flex;
@@ -47,13 +62,14 @@ section {
       color: var(--gray);
       font-size: 40px;
       font-weight: 600;
-
+      text-shadow: 8px 8px 10px rgba(0, 0, 0, 0.6);
     }
   }
 
   p {
     position: relative;
     width: 85%;
+    max-width: 1200px;
     color: var(--white);
     font-size: 22px;
     font-weight: 500;
@@ -61,7 +77,7 @@ section {
     z-index: 2;
   }
 
-  .monstera-leave {
+  .monstera-leaves {
     position: absolute;
     height: 100vh;
     max-width: 90vw;
@@ -77,36 +93,69 @@ section {
       opacity: 0.9;
     }
   }
+
+  .monstera-image {
+    position: absolute;
+    top: calc(100vh - 500px);
+    left: -220px;
+    width: 500px;
+    transform: rotate(71deg);
+    z-index: 0;
+    opacity: 0.9;
+  }
 }
 
 @media screen and (min-width: 1600px) {
   section {
+    .wrapper-main-text h1 {
+      font-size: 170px;
+    }
 
+    .monstera-leaves {
+      max-width: 100vw;
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  section {
+    padding: 0 0 50px 40px;
 
     .wrapper-main-text {
-
-
       h1 {
-        font-size: 170px;
+        font-size: 60px;
       }
 
       p {
+        width: unset;
+        font-size: 30px;
+      }
+    }
 
+    .jungle-image, .monstera-leaves, .monstera-image {
+      opacity: 0.2;
+      z-index: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  section {
+    padding: 0 0 10px 10px;
+
+    .wrapper-main-text {
+      h1 {
+        font-size: 40px;
+      }
+
+      p {
+        font-size: 20px;
       }
     }
 
     p {
-
-    }
-
-    .monstera-leave {
-      right: -30vw;
-
-      img {
-
-      }
+      font-size: 15px;
     }
   }
-
 }
 </style>

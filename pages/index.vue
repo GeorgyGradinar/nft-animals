@@ -6,7 +6,7 @@
 </template>
 
 <script setup lang="ts">
-import HeroSection from "~/components/index-page/HeroSection.vue"
+import HeroSection from "~/components/index-page/HeroSection.vue";
 import AboutUs from "~/components/index-page/AboutUs.vue";
 </script>
 
@@ -17,7 +17,7 @@ import AboutUs from "~/components/index-page/AboutUs.vue";
   height: 100%;
   min-height: 100vh;
   padding-top: 100px;
-  background: var(--background);
   overflow: hidden;
+  background: var(--background);
 }
 </style>
