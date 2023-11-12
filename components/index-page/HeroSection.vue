@@ -12,10 +12,10 @@
       save animals!
     </p>
 
-    <img class="monstera-image" src="~/assets/images/monstera-2.png" alt="monstera leaves">
+    <img class="monstera-image" src="~/assets/images/monstera-2.webp" alt="monstera leaves">
 
     <div class="monstera-leaves">
-      <img class="monstera-2" src="~/assets/images/monstera-3.png" alt="monstera leaves">
+      <img class="monstera-2" src="~/assets/images/monstera-3.webp" alt="monstera leaves">
     </div>
   </section>
 </template>

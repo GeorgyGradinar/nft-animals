@@ -15,12 +15,12 @@
       <NuxtLink to="/nft">Buy Now</NuxtLink>
 
       <div class="monstera-3">
-        <img src="~/assets/images/monstera-3.png" alt="">
+        <img src="~/assets/images/monstera-3.webp" alt="">
       </div>
     </div>
 
     <div class="monstera-2">
-      <img src="~/assets/images/monstera-2.png" alt="">
+      <img src="~/assets/images/monstera-2.webp" alt="">
     </div>
 
 
@@ -32,42 +32,42 @@ const facts = [
   {
     title: 'Choose to Reuse',
     text: 'Challenge yourself to use more reusable items, like bags, cups, and lunchboxes, and to take only what you need. Before throwing something away, see if you can find a new use for it—turning trash into treasure!',
-    urlImg: 'bernard-hermant.jpg'
+    urlImg: 'bernard-hermant.webp'
   },
   {
     title: 'Beware of Energy Vampires',
     text: 'Even if something is turned off, it can use or “suck” electricity when it’s plugged into the wall. Unplug electronics like video games and chargers when you aren’t using them.',
-    urlImg: 'appolinary-kalashnikova.jpg'
+    urlImg: 'appolinary-kalashnikova.webp'
   },
   {
     title: 'Be Kind to Wildlife',
     text: 'All wildlife deserves respect—even animals that don’t usually get as much love, like insects, spiders, frogs, and snakes. They have important roles to play in our ecosystems. Make your yard welcoming to all wildlife by planting pollinator-friendly and native plants.',
-    urlImg: 'noah-buscher.jpg'
+    urlImg: 'noah-buscher.webp'
   },
   {
     title: 'Spot Check',
     text: 'Keeping track of animal populations is part of protecting wildlife. Scientists gather this information by using “trail cameras” that take pictures of animals in an area. You can help by identifying wildlife in the images taken by these cameras online. Right now, we need your help identifying burrowing owls in the southwestern United States and wildlife in Kenya.',
-    urlImg: 'chris-abney.jpg'
+    urlImg: 'chris-abney.webp'
   },
   {
     title: 'Help Slow Climate Change',
     text: 'It takes community-level action to slow climate change, but your choices can help. Challenge your family to make more meatless dinners, or carpool, walk, bike, or use public transportation when you can. These actions reduce carbon emissions that drive climate change.',
-    urlImg: 'paul-green.jpg'
+    urlImg: 'paul-green.webp'
   },
   {
     title: 'Be a Responsible Pet Owner',
     text: 'Make sure you do your research and are ready for the large responsibility of caring for an animal its entire life. Keep pets—especially cats—indoors, as they can prey on local wildlife. And remember that wild animals do not make good pets!',
-    urlImg: 'arun-anoop.jpg'
+    urlImg: 'arun-anoop.webp'
   },
   {
     title: 'Leave No Trace',
     text: 'When you explore nature, leave only footprints and take only pictures. Be sure to stay on established trails, and never try to approach, touch, or feed wildlife. Instead, observe wildlife respectfully from a distance using binoculars or a camera. Even just a tiny piece of trash can be harmful to wildlife, so if you can safely pick up litter, place it in the appropriate bin.',
-    urlImg: 'evelyn-mostrom.jpg'
+    urlImg: 'evelyn-mostrom.webp'
   },
   {
     title: 'Snack Sustainably',
     text: 'Some snack foods are made with unsustainable palm oil, whose production takes habitat away from threatened wildlife. Choose snacks that are certified by the Roundtable for Sustainable Palm Oil (RSPO) instead. You can ask an adult to download an app to find RSPO-approved products.',
-    urlImg: 'promodhya-abeysekara.jpg'
+    urlImg: 'promodhya-abeysekara.webp'
   },
 ]
 

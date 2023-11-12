@@ -1,6 +1,6 @@
 <template>
   <div class="card">
-    <img class="card__img" :src="`_nuxt/assets/images/nft/nft${id}.webp`" alt="nft"/>
+    <img class="card__img" :src="useAsset(`nft${id}.webp`)" alt="nft"/>
     <div class="card__info info">
       <p class="info__title">{{ props.title }}</p>
       <div class="info__sum">
@@ -19,6 +19,14 @@ const props = defineProps({
   title: String,
   sum: String,
 })
+
+function useAsset(path: String) {
+  const assets = import.meta.glob('~/assets/**/*', {
+    eager: true,
+    import: 'default',
+  });
+  return assets['/assets/images/nft/' + path];
+}
 </script>
 
 <style scoped lang="scss">

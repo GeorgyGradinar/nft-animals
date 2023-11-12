@@ -8,7 +8,7 @@
     </p>
 
     <div class="wrap-img">
-      <img src="~assets/images/our-mission/doctor.jpg" alt="">
+      <img src="~assets/images/our-mission/doctor.webp" alt="">
     </div>
 
 
@@ -19,7 +19,7 @@
     </p>
 
     <div class="wrap-img">
-      <img src="~assets/images/our-mission/dog.jpg" alt="">
+      <img src="~assets/images/our-mission/dog.webp" alt="">
     </div>
 
     <p>Beyond rescue, education plays a pivotal role in our mission. Furry Fund actively engages with communities to
@@ -29,7 +29,7 @@
     </p>
 
     <div class="wrap-img">
-      <img src="~assets/images/our-mission/family.jpg" alt="">
+      <img src="~assets/images/our-mission/family.webp" alt="">
     </div>
 
     <p>Our adoption programs are a celebration of success stories. Furry Fund endeavors to match animals with loving
@@ -39,7 +39,7 @@
     </p>
 
     <div class="wrap-img">
-      <img src="~assets/images/our-mission/community.jpg" alt="">
+      <img src="~assets/images/our-mission/community.webp" alt="">
     </div>
 
 
@@ -51,7 +51,7 @@
     </p>
 
     <div class="wrap-img">
-      <img src="~assets/images/our-mission/we.jpg" alt="">
+      <img src="~assets/images/our-mission/we.webp" alt="">
     </div>
 
   </div>

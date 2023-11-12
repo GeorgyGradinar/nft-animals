@@ -1,7 +1,7 @@
 <template>
   <footer>
     <div class="wrapper-deer">
-      <img src="~/assets/images/deer.png" alt="">
+      <img src="~/assets/images/deer.webp" alt="">
     </div>
 
     <div class="wrap-button">
