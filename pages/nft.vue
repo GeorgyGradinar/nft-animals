@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper-page">
-    <img class="img-1" src="_nuxt/assets/images/monstera-4.webp" alt="monstera">
-    <img class="img-2" src="_nuxt/assets/images/monstera-5.webp" alt="monstera">
+    <img class="img-1" src="~/assets/images/monstera-4.webp" alt="monstera">
+    <img class="img-2" src="~/assets/images/monstera-5.webp" alt="monstera">
     <p class="title">You can buy an NFT and help save the lives of thousands of other animals. All proceeds from the
       sale
       of NFTs will
@@ -15,7 +15,7 @@
       </div>
     </div>
     <div class="text-bottom">
-      <img class="text-bottom__img" src="_nuxt/assets/images/monstera-4.webp" alt="monstera">
+      <img class="text-bottom__img" src="~/assets/images/monstera-4.webp" alt="monstera">
       <p>Let this NFT be stored in your wallet, you will feel peace and joy, knowing that you have
         contributed to helping
         save the lives of animals, thank you for your kind heart.</p>
