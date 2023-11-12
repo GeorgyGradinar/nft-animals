@@ -14,6 +14,6 @@ import FooterElement from "~/components/FooterElement.vue";
 <style scoped>
 .body {
   background: var(--background);
-  overflow-x: hidden;
+  overflow: hidden;
 }
 </style>
